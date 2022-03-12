@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey, I'm Jai Vidyasagar </title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a584cd900f.js" crossorigin="anonymous"></script>
+    <style>
+
+
+      /* @font-face {
+    font-family: "Inter";
+    src: url("https://boonsuen.com/process-scheduling-solver/_next/static/assets/fonts/Inter.var-a738a131ff730bb906e6956b179a83ec.woff2") format('woff2 supports variations'),
+         url("https://boonsuen.com/process-scheduling-solver/_next/static/assets/fonts/Inter.var-a738a131ff730bb906e6956b179a83ec.woff2") format('woff2-variations');
+    font-weight: 100 900;
+  } */
+
+
+    </style>
+</head>
+<body>
+  <div class="topmost-container">
+    <nav class="navbar navbar-expand-lg navbar-light " id="navigation-container">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: var(--pri-col) ;" href="">Jai Vidyasagar R</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" id="navlinks" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" id="navlinks" href="#about">About</a>
+            {% load static %}
+            <a class="nav-link active" id="navlinks" href="{% static 'docs/JaiResume.pdf' %}" >Resume</a>
+            <a class="nav-link active" id="navlinks" href="#projects">Projects</a>
+            <a class="nav-link active dropdown-toggle" id="navlinks" href="https://jaividyasagar.medium.com/">Thoughts</a>
+            <a class="nav-link active" id="navlinks" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="hidden-container">
+  </div>
+{% block content %}
+<div class="top-container">
+  <br><br>
+  <!-- <div class="pad-container"> -->
+    <center>
+      <h1>I'm Jai Vidyasagar R</h1>
+      <h4>I design and code simple things, and I love what I do.</h4>
+      <br><br><br>
+      {% load static %}
+      <img src="{% static 'images/prog-modified.png' %}" alt="The Desk of Jai" class="gadgets">
+      <br>
+    </center>
+  <!-- </div> -->
+
+
+</div>
+<div class="about-container" id="about">
+  <center>
+    <h1 id="hello" style="padding-bottom: 30px;">Hello.</h1>
+    <div class="aboutme">
+      {% load static %}
+    <img src="{% static 'images/jaiprofile.jpg' %}" alt="OOPS! Where is my profile pic ?" id="jai-profile">
+    <h2 style="font-size: 26px;">About Me</h2>
+    <span id="span-1"><h4 id="intro-me" style="color: var(--sec-col); text-shadow: none;">Hey there, This is <mark>Jai Vidyasagar R</mark>.<br>I'm a Designer and I love solving problems, pushing myself and taking up new challenges. <br>
+      Currently, I'm pursuing my B.Tech. Degree in Computer Science and Engineering(III Year) at <a href="https://sastra.edu/" target="_block" style="text-decoration: none;">SASTRA Deemed University</a>, Thanjavur </h4></span>
+    <table>
+      <tr>
+        <td id="table-left">Name: </td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp; Jai Vidyasagar R</td>
+      </tr>
+      <tr>
+        <td id="table-left">Age: </td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;20</td>
+      </tr>
+      <tr>
+        <td id="table-left">DOB: </td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;September 17, 2001</td>
+      </tr>
+
+      <tr>
+        <td id="table-left">Degree:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;B.Tech. Computer Science and Engineering</td>
+      </tr>
+      <tr>
+        <td id="table-left">University:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;SASTRA Deemed University, Thanjavur, Tamil Nadu, India.</td>
+      </tr>
+      <tr>
+        <td id="table-left">Year:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;III</td>
+      </tr>
+      <tr>
+        <td id="table-left">Email:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;<a href="mailto:jaividyasagarr@gmail.com" style="text-decoration: none;" title="Wants to send an email to Jai ? Click me:)">jaividyasagarr@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td id="table-left">Phone:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;<a href="tel://9500442237" style="text-decoration: none;" title="Click here to Call Jai :)">9500442237</a></td>
+      </tr>
+      <tr>
+        <td id="table-left">Address: </td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;Kanchipuram, Tamil Nadu, India.</td>
+      </tr>
+      <!-- <tr>
+        <td id="table-left">Pincode:</td>
+        <td id="table-right">&nbsp;&nbsp;&nbsp;631502</td>
+      </tr> -->
+    </table>
+    </div>
+  </center>
+</div>
+<hr>
+<div class="projects-container" id="projects">
+  <center>
+    <h1  id="certifications">Certifications</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100">
+      <div class="carousel-inner" style="z-index: -9;">
+        <div class="carousel-item active">
+          <img src="https://m.media-amazon.com/images/I/71+miIAZUVL._SL1424_.jpg"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71+miIAZUVL._SL1424_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71+miIAZUVL._SL1424_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71+miIAZUVL._SL1424_.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img  src="https://www.computerhope.com/jargon/c/certificate.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </center>
+</div>
+
+<hr style="z-index: -9;">
+
+
+<div class="contact-container" id="contact">
+<center>
+  <h1  id="getInTouch">Get In Touch :)</h1>
+  <div class="icons">
+    <a href="https://www.facebook.com/jaividya.sagar017" id="icon-anchor" target="_block"><i id="icon-1" class="fa-brands fa-facebook fa-6x"></i></a>
+    <a href="https://www.instagram.com/jaividyasagar/" id="icon-anchor" target="_block"><i id="icon-2" class="fa-brands fa-instagram fa-6x"></i></a>
+    <a href="https://twitter.com/JaiVidyasagarR" id="icon-anchor" target="_block"><i id="icon-3" class="fa-brands fa-twitter fa-6x"></i></a>
+    <a href="https://www.linkedin.com/" id="icon-anchor" target="_block"><i id="icon-4"class="fa-brands fa-linkedin fa-6x"></i></a>
+    <a href="https://github.com/Jaividyasagar" id="icon-anchor" target="_block"><i id="icon-5"class="fa-brands fa-github fa-6x"></i></a>
+  </div>
+  <br>
+  <h4 style="font-family: 'Poppins',sans-serif;">Got a problem that needs to be solved technically ! Lets's Talk.</h6>
+    <br>
+    <div class="message-container">
+      <center>
+        <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScN6cGRXfj6-jZblru7bfDAEfhbbh3C4u2iVQeh1FO0FA6GvA/formResponse" target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-shuffle-seed="9096668573211356061" data-response="%.@.[]]" data-first-entry="0" data-last-entry="4" data-is-first-page="true"><div style="float: left;">
+            <input name="entry.825666900" type="text" class="input-ldiv" placeholder="Your Name" ><br>
+            <input name="entry.959282088" type="email" class="input-ldiv" placeholder="Your Email Address" ><br>
+            <input name="entry.421788782" type="text" class="input-ldiv" placeholder="Subject" >
+          </div>
+          <div style="float: left;" id="messsaging-send">
+            <textarea name="entry.1740104621" class="input-rdiv" name="description" id="" cols="30" rows="5" placeholder="Description" ></textarea><br>
+            <input  id="sendmessage" class="input-rdi" style="float: left;" type="submit" value="Send Message">
+          </div>
+
+        </form> -->
+
+        <form action="{% url 'response' %}" method="POST">
+          <div style="float: left;">
+            <input name="name" type="text" class="input-ldiv" placeholder="Your Name" required><br>
+            <input name="email" type="email" class="input-ldiv" placeholder="Your Email Address" requiredrequired><br>
+            <input name="subject" type="text" class="input-ldiv" placeholder="Subject" required>
+          </div>
+          <div style="float: left;" id="messsaging-send">
+            <textarea name="description" class="input-rdiv" name="description" id="" cols="30" rows="5" placeholder="Description" required></textarea><br>
+{% csrf_token %}
+            <input  id="sendmessage" class="input-rdi" style="float: left;" type="submit" value="Send Message">
+          </div>
+
+        </form>
+      </center>
+
+    </div>
+</center>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+</div>
+
+
+<div id="phoneemailcont" class="row phone-email-address-container" >
+  <div id="phone-click" class="col-sm-3 phone" >
+    <table style="text-align: center;">
+      <tr >
+        <td><i class="fa-solid fa-phone fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td><h3 id="phoneno">Phone Number</h3></td>
+      </tr>
+      <tr>
+        <td><a href="tel://9500442237" style="text-decoration: none;">9500442237</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="email-click" class="col-sm-3 email" >
+    <table style="text-align: center;">
+      <tr>
+        <td><i class="fa-solid fa-envelope fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td><h3>Email Address</h3></td>
+      </tr>
+      <tr>
+        <td><a href="mailto:jaividyasagarr@gmail.com" style="text-decoration: none;">jaividyasagarr@gmail.com</a></td>
+      </tr>
+    </table>
+  </div>
+  <!-- <div class="col address" style="width: 20%;padding-left: 0;padding-right: 0;margin-right: 0;">
+    <table style="text-align: center;">
+      <tr>
+        <td><i class="fa-solid fa-map-location-dot fa-2x"></i></td>
+      </tr>
+      <tr>
+        <td><h3>Address</h3></td>
+      </tr>
+      <tr>
+        <td><a href="https://goo.gl/maps/iHEzLYXYM12mvKSV7" style="text-decoration: none;">Kanchipuram, Tamil Nadu, India.</a></td>
+      </tr>
+    </table>
+  </div> -->
+</div>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<a id="back-to-top">
+  <i class="fa-solid fa-circle-arrow-up fa-2x"></i>
+</a>
+<div class="bottom-container">
+  <center>
+    <h5 class="copyright">Copyright &copy; 2022. All rights reserved @ JAI VIDYASAGAR. </h5>
+  </center>
+
+</div>
+
+{% endblock %}
+{% load static %}
+
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
